@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "13687527931",
+    "firebase_url": "https://yosadha-finance.firebaseio.com",
+    "project_id": "yosadha-finance",
+    "storage_bucket": "yosadha-finance.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13687527931:android:f3957e489586c5f3f9d35e",
+        "android_client_info": {
+          "package_name": "com.arjun_m.yosadha_finance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13687527931-9ku259hg8olvtr7h2vf72996uau09qad.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arjun_m.yosadha_finance",
+            "certificate_hash": "7966e01ef26336d35e0c71d39c86e4c377f42521"
+          }
+        },
+        {
+          "client_id": "13687527931-oeql0jpoujt3ticdqkfk2th0ibo37bdi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKTlAUNt9Foi211OYJHnqgtVcVmpq7Ts4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13687527931-oeql0jpoujt3ticdqkfk2th0ibo37bdi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
