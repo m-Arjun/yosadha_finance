@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:yosadha_finance/models/user.dart';
+import 'package:yosadha_finance/screens/home/sidebar_layout.dart';
 import 'package:yosadha_finance/services/authservice.dart';
 
 class Home extends StatelessWidget {
@@ -10,21 +11,23 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final String displayname = user.displayname ?? 'Admin';
-    return Scaffold(
-      backgroundColor: Colors.grey,
-      appBar: AppBar(
-        title: Text('Home'),
-        actions: <Widget>[
-          FlatButton.icon(onPressed: ()async{
-            await _auth.signout();
-          }, icon: Icon(Icons.person), label: Text('signout'))
-        ],
-      ),
-      body: SafeArea(
-        child: Container(
-          child: Text('welcome $displayname '),
-        )
-        ),
-    );
+    return Sidebarlayout();
+    //  Scaffold(
+    //   backgroundColor: Colors.grey,
+    //   appBar: AppBar(
+    //     title: Text('Home'),
+    //     actions: <Widget>[
+    //       FlatButton.icon(onPressed: ()async{
+    //         await _auth.signout();
+    //       }, icon: Icon(Icons.person), label: Text('signout'))
+    //     ],
+    //   ),
+      
+      // body: SafeArea(
+      //   child: Container(
+      //     child: Text('welcome $displayname '),
+      //   )
+      //   ),
+    // );
   }
 }
