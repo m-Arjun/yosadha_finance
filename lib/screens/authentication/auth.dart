@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:yosadha_finance/screens/authentication/sign_in.dart';
+
 
 class Authenticate extends StatefulWidget {
   @override
-  AauthenticateState createState() => AauthenticateState();
+  _AuthenticateState createState() => _AuthenticateState();
 }
 
-class AauthenticateState extends State<Authenticate> {
+class _AuthenticateState extends State<Authenticate> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child:Text('Authenticate')
+    child:Signin()    
     );
   }
 }

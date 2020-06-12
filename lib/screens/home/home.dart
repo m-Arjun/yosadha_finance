@@ -1,12 +1,30 @@
 import 'package:flutter/material.dart';
+import 'package:yosadha_finance/models/user.dart';
+import 'package:yosadha_finance/services/authservice.dart';
 
 class Home extends StatelessWidget {
+ final User user;
+  Home({this.user});
+
+  final Authservice _auth =Authservice();
   @override
   Widget build(BuildContext context) {
-        //SnackBar snackbar = SnackBar(backgroundColor: Colors.green,content: Text('Snack bar'),);
+    return Scaffold(
+      backgroundColor: Colors.grey,
+      appBar: AppBar(
+        title: Text('Home'),
+        actions: <Widget>[
 
-    return Container(
-      child: Text("home"),
+          FlatButton.icon(onPressed: ()async{
+            await _auth.signout();
+          }, icon: Icon(Icons.person), label: Text('signout'))
+        ],
+      ),
+      body: SafeArea(
+        child: Container(
+          child: Text('welcome ${user.displayname}'),
+        )
+        ),
     );
   }
 }
