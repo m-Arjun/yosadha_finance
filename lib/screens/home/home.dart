@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:yosadha_finance/models/user.dart';
-import 'package:yosadha_finance/screens/home/sidebar_layout.dart';
+import 'package:yosadha_finance/screens/home/pages/sidebar_layout.dart';
 import 'package:yosadha_finance/services/authservice.dart';
 
 class Home extends StatelessWidget {
@@ -11,7 +11,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final String displayname = user.displayname ?? 'Admin';
-    return Sidebarlayout();
+    return Sidebarlayout(user: user);
     //  Scaffold(
     //   backgroundColor: Colors.grey,
     //   appBar: AppBar(
