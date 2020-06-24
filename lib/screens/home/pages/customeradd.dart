@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:yosadha_finance/bloc/navigation_bloc.dart';
 import 'package:yosadha_finance/models/user.dart';
+import 'package:yosadha_finance/screens/home/pages/menu_drawer.dart';
 
 class Custadd extends StatelessWidget with NavigationStates {
   @override
@@ -119,6 +120,7 @@ class FormScreenState extends State<FormScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Form Demo")),
+      drawer: Menudrawer(),
       body: Container(
         
         margin: EdgeInsets.all(24),

@@ -14,9 +14,9 @@ class Menuitem extends StatelessWidget {
           child: Padding(
         padding: const EdgeInsets.all(16),
         child: Row(children: <Widget>[
-          Icon(icon,color: Colors.white,size: 30,),
+          Icon(icon,color: Colors.black,size: 30,),
           SizedBox(width: 20,),
-          Text(title,style: TextStyle(fontWeight: FontWeight.w400,fontSize: 26 ,color: Colors.white),)
+          Text(title,style: TextStyle(fontWeight: FontWeight.w400,fontSize: 26 ,color: Colors.black),)
         ],),
 
         

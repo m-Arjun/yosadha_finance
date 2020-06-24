@@ -2,6 +2,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:yosadha_finance/models/user.dart';
+import 'package:yosadha_finance/screens/home/home.dart';
+import 'package:yosadha_finance/screens/home/pages/customeradd.dart';
+import 'package:yosadha_finance/screens/home/pages/customerdetails.dart';
 import 'package:yosadha_finance/screens/wrapper.dart';
 import 'package:yosadha_finance/services/authservice.dart';
 import 'package:yosadha_finance/shared/loading.dart';
@@ -17,7 +20,13 @@ class MyApp extends StatelessWidget {
     return StreamProvider<User>.value(
       value:Authservice().user,
           child: MaterialApp(
-        home:Wrapper()
+        home:Wrapper(),
+        initialRoute: '/home',
+        routes: {
+          '/home':(_)=>Homepage(),
+          '/custadd':(_)=>Custadd(),
+          '/custdetails':(_)=>Custdetails(),
+        },
       ),
     );
   }
