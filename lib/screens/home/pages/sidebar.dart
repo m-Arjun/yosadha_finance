@@ -83,6 +83,7 @@ _SidebarState({this.user});
                   padding: EdgeInsets.symmetric(horizontal: 20),
               color: Color(0xFF7B1FA2),
               child: Column(
+                
                   children: <Widget>[
                     SizedBox(height: 100,),
                     ListTile(

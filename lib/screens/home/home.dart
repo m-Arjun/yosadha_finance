@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:yosadha_finance/models/user.dart';
 import 'package:yosadha_finance/screens/home/pages/sidebar_layout.dart';
-import 'package:yosadha_finance/services/authservice.dart';
+//import 'package:yosadha_finance/services/authservice.dart';
 
 class Home extends StatelessWidget {
  final User user;
   Home({this.user});
   
-  final Authservice _auth =Authservice();
+  //final Authservice _auth =Authservice();
   @override
   Widget build(BuildContext context) {
-    final String displayname = user.displayname ?? 'Admin';
+    // final String displayname = user.displayname ?? 'Admin';
     return Sidebarlayout(user: user);
     //  Scaffold(
     //   backgroundColor: Colors.grey,
